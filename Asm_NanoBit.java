@@ -29,9 +29,9 @@ public class Asm_NanoBit {
         String bin = "";
         String[] splitted = src.split("\n");
         for (String line : splitted) {
-            line = line.trim(); // Remove any leading or trailing whitespace
+            line = line.trim();
             if (line.isEmpty()) {
-                continue; // Skip empty lines
+                continue;
             }
             String[] split = line.split(" ");
             for (String keyword : split) {
