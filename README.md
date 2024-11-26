@@ -39,28 +39,30 @@ The NanoBit CPU is a simple, custom-designed CPU architecture implemented in a v
 1. **Assembling Code**  
    Assemble an assembly file (`input.asm`) into a binary file (`output.bin`):  
    ```
-   java Asm_NanoBit -o input.asm output.bin
+   java Asm_NanoBit -o input.asm output.bin```
 Output to Console
 Assemble an assembly file and print the binary output:
 
-java Asm_NanoBit -o input.asm -p
+```java Asm_NanoBit -o input.asm -p```
 Help Command
 Display available commands:
 
-java Asm_NanoBit help
+```java Asm_NanoBit help```
 Example Assembly Code
 asm
-
+```
 out edx
 sub edx
 sub eax
 str eax
+```
 Output Binary Code
-
+```
 011 01
 001 01
 001 00
 010 00
+```
 NanoBit CPU Architecture
 The NanoBit CPU is a minimalistic 2-register CPU with the following characteristics:
 
