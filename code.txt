@@ -1,0 +1,4 @@
+out edx
+sub edx
+sub eax
+str eax
