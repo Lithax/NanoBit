@@ -38,16 +38,19 @@ The NanoBit CPU is a simple, custom-designed CPU architecture implemented in a v
 
 1. **Assembling Code**  
    Assemble an assembly file (`input.asm`) into a binary file (`output.bin`):  
-   ```
-   java Asm_NanoBit -o input.asm output.bin```
+```
+   java Asm_NanoBit -o input.asm output.bin
+```
 Output to Console
 Assemble an assembly file and print the binary output:
 ```
-java Asm_NanoBit -o input.asm -p```
+java Asm_NanoBit -o input.asm -p
+```
 Help Command
 Display available commands:
 ```
-java Asm_NanoBit help```
+java Asm_NanoBit help
+```
 Example Assembly Code
 asm
 ```
@@ -74,12 +77,12 @@ str: Stores the immediate value in a register.
 out: Outputs the contents of a register.
 Registers:
 
-eax: 8-bit general-purpose accumulator.
-edx: 8-bit general-purpose data register.
+eax: 4-bit general-purpose accumulator.
+edx: 4-bit general-purpose data register.
 Control Signals:
 
 Control signals are wired to perform basic fetch-decode-execute cycles.
 Clock:
 
 Single clock pulse per instruction cycle.
-This CPU was implemented using Digital Logic Sim, and the assembler has been designed to provide an efficient interface for programming it.
+This CPU was implemented using Digital Logic Sim, and the assembler has been designed to provide an efficient interface for using it.
